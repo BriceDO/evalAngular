@@ -1,0 +1,12 @@
+<h2>Créer votre propre champion !</h2>
+<form [formGroup]="formHero" (submit)="save()">
+    <label for="titre">Titre: </label>
+    <input type="text" formControlName="titre" id="titre"><br>
+    <label for="key">Key: </label>
+    <input type="text" formControlName="key" id="key"><br>
+    <label for="nom">Nom: </label>
+    <input type="text" formControlName="nom" id="nom"><br>
+    <label for="active">Actif: </label>
+    <input type="checkbox" formControlName="active" id="active"><br>
+    <button pButton class="submit-btn" type="submit">Save</button>
+</form> 

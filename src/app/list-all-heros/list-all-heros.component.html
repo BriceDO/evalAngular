@@ -1,0 +1,12 @@
+<button pButton (click)="getAll() ">Montrer tous les champions</button>
+
+<div>
+    <div *ngFor="let hero of savedHeros">
+        <p>Le champion numéro {{hero.id}} s'appelle {{hero.name}} avec un statut sur {{hero.active}}.</p>
+        <label for="active"> Changer son statut
+            <input (click)="modifyOne(hero)" type="checkbox" name="active" id="active">
+        </label>
+
+        <button pButton (click)="deleteOne(hero)">Supprimer n°{{hero.id}}</button>
+    </div>
+</div>

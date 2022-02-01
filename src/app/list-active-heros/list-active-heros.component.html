@@ -1,0 +1,4 @@
+<button pButton (click)="getActiveHeros()">Montrer les champions Actifs</button>
+<div *ngFor="let hero of activesHeros">
+    <p>Le champion actif numéro {{hero.id}} s'appelle {{hero.name}}.</p>
+</div>

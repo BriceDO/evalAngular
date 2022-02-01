@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import "primeng/resources/themes/lara-light-indigo/theme.css";
+@import "primeng/resources/primeng.min.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+body {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.navbar button {
+    margin: 1em;
+}
+
+form {
+    display: inline-block;
+}
+
+.submit-btn{
+    margin: 1em;
+}
+
+input {
+    margin: 1em;
+}
